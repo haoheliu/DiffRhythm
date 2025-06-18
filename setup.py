@@ -25,7 +25,7 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'torchsubband'
+NAME = 'diffrhythm'
 DESCRIPTION = 'This package is written for subband operations.'
 URL = 'https://github.com/haoheliu/torchsubband'
 EMAIL = 'haoheliu@gmail.com'
@@ -36,7 +36,14 @@ VERSION = '0.0.9'
 # What packages are required for this module to be executed?
 REQUIRED = [
     "torch>=1.8.0",
-    "torchlibrosa>=0.0.7,<=0.0.9",
+    "phonemizer",
+    "onnxruntime",
+    "pypinyin",
+    "cn2an",
+    "jieba",
+    "unidecode",
+    "inflect",
+    "pandas
 ]
 
 # What packages are optional?
@@ -118,7 +125,7 @@ setup(
     url=URL,
     # packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
     # If your package is a single module, use this instead of 'packages':
-    py_modules=['torchsubband'],
+    py_modules=['diffrhythm'],
 
     # entry_points={
     #     'console_scripts': ['mycli=mymodule:cli'],
