@@ -43,7 +43,7 @@ REQUIRED = [
     "jieba",
     "unidecode",
     "inflect",
-    "pandas
+    "pandas"
 ]
 
 # What packages are optional?
